@@ -56,4 +56,8 @@ validate x = ( sumDigits( doubleEveryOther( toDigits x ))) `mod` 10 == 0
 -- return a list of moves to be performed to move the stack of 
 -- discs from the first peg to the second
 
-
+type Peg = String
+type Move = (Peg,Peg)
+hanoi :: Integer -> Peg -> Peg -> Peg -> [Move]
+hanoi 0 a b c = []
+hanoi x a b c = ( hanoi (x-1) a c b ) ++ ( (a,b) : ( hanoi (x-1) c b a ) )
