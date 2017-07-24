@@ -1,0 +1,64 @@
+[1 of 2] Compiling Main             ( /tmp/stack4630/plugins-1.5.6.0/Setup.lhs, /tmp/stack4630/plugins-1.5.6.0/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/Main.o )
+[2 of 2] Compiling StackSetupShim   ( /home/tessmero/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack4630/plugins-1.5.6.0/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/StackSetupShim.o )
+Linking /tmp/stack4630/plugins-1.5.6.0/.stack-work/dist/x86_64-linux/Cabal-1.24.2.0/setup/setup ...
+Configuring plugins-1.5.6.0...
+configure: WARNING: unrecognized options: --with-compiler
+checking build system type... x86_64-unknown-linux-gnu
+checking for ghc... ghc
+checking for value of __GLASGOW_HASKELL__... 800
+checking for ghc library directory... /home/tessmero/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2
+checking for gcc... /usr/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc accepts -g... yes
+checking for /usr/bin/gcc option to accept ISO C89... none needed
+checking for arc4random... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating config.mk
+config.status: creating testsuite/makewith/io/TestIO.conf
+config.status: creating testsuite/makewith/unsafeio/Unsafe.conf
+config.status: creating config.h
+configure: WARNING: unrecognized options: --with-compiler
+Building plugins-1.5.6.0...
+Preprocessing library plugins-1.5.6.0...
+[ 1 of 12] Compiling System.Plugins.Process ( src/System/Plugins/Process.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Process.o )
+[ 2 of 12] Compiling System.Plugins.Parser ( src/System/Plugins/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Parser.o )
+[ 3 of 12] Compiling System.Plugins.LoadTypes ( src/System/Plugins/LoadTypes.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/LoadTypes.o )
+[ 4 of 12] Compiling System.Plugins.Consts ( src/System/Plugins/Consts.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Consts.o )
+[ 5 of 12] Compiling System.Plugins.Env ( src/System/Plugins/Env.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Env.o )
+
+src/System/Plugins/Env.hs:72:1: warning: [-Wdodgy-imports]
+    Module ‘Distribution.Package’ does not export ‘depends’
+
+src/System/Plugins/Env.hs:306:114: warning: [-Wdeprecations]
+    In the use of ‘installedPackageId’
+    (imported from Distribution.InstalledPackageInfo):
+    Deprecated: "Use installedUnitId instead"
+
+src/System/Plugins/Env.hs:313:11: warning: [-Wdeprecations]
+    In the use of ‘installedPackageId’
+    (imported from Distribution.InstalledPackageInfo):
+    Deprecated: "Use installedUnitId instead"
+
+src/System/Plugins/Env.hs:313:42: warning: [-Wdeprecations]
+    In the use of ‘installedPackageId’
+    (imported from Distribution.InstalledPackageInfo):
+    Deprecated: "Use installedUnitId instead"
+[ 6 of 12] Compiling System.Plugins.Utils ( src/System/Plugins/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Utils.o )
+
+src/System/Plugins/Utils.hs:69:1: warning: [-Wdodgy-imports]
+    Module ‘Prelude’ does not export ‘catch’
+[ 7 of 12] Compiling System.Plugins.Make ( src/System/Plugins/Make.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Make.o )
+[ 8 of 12] Compiling System.Plugins.Load ( src/System/Plugins/Load.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins/Load.o )
+[ 9 of 12] Compiling System.Plugins   ( src/System/Plugins.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Plugins.o )
+[10 of 12] Compiling System.Eval.Utils ( src/System/Eval/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Eval/Utils.o )
+[11 of 12] Compiling System.Eval.Haskell ( src/System/Eval/Haskell.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Eval/Haskell.o )
+[12 of 12] Compiling System.Eval      ( src/System/Eval.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/System/Eval.o )
+Installing library in
+/home/tessmero/haskell/CIS194-HW01/.stack-work/install/x86_64-linux/lts-8.23/8.0.2/lib/x86_64-linux-ghc-8.0.2/plugins-1.5.6.0-HtzHP2rQjTiHrdhPHaVGHT
+Registering plugins-1.5.6.0...
