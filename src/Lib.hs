@@ -1,5 +1,5 @@
 module Lib (
-  toDigits, toDigitsRev, doubleEveryOther, sumDigits, validate, hanoi
+  toDigits, toDigitsRev, doubleEveryOther, sumDigits, validate, hanoi, Move
   ) where
 
 
@@ -17,7 +17,7 @@ toDigits n = reverse( toDigitsRev n )
 
 
 -- Exercise 2
--- double every other nubmer in a list
+-- double every other number in a list
 
 doubleEveryOther :: [Integer] -> [Integer]
 doubleEveryOther []         = []
