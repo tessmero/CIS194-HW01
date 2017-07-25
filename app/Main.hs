@@ -1,12 +1,22 @@
 module Main where
 
 import Lib
-import System.Eval.Haskell
+import Language.Haskell.Interpreter
 
-printAndEval :: String -> IO ()
-printAndEval cmd = putStrLn( cmd ++ " = " ++ (eval cmd) )
+demo :: String -> IO ()
+demo cmd = do
+  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: [Integer])
+  putStrLn (cmd ++ " = " ++ (drop 6 (show result)))
 
 main :: IO ()
 main = do
-  printAndEval "toDigits 1234"
-  
+  putStrLn "CIS194 Homework 1\n"
+
+  putStrLn "Exercise 1"
+  demo "toDigits 1234    "
+  demo "toDigitsRev 1234 "
+  demo "toDigits 0       "
+  demo "toDigits (-17)   "
+
+  putStrLn "\nExercise 2" 
+

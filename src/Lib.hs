@@ -2,6 +2,7 @@ module Lib (
   toDigits, toDigitsRev, doubleEveryOther, sumDigits, validate, hanoi
   ) where
 
+
 -- Exercise 1 
 -- find the digits of a number
 
