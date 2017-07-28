@@ -7,24 +7,26 @@ demor :: String -> String -> IO ()
 demor cmd sresult =
   putStrLn (cmd ++ " = " ++ (drop 6 (sresult)))
 
+imports = ["Prelude","Lib"]
+
 demoInts :: String -> IO ()
 demoInts cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: [Integer])
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: [Integer])
   demor cmd (show result)
 
 demo1Int :: String -> IO ()
 demo1Int cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: Integer)
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: Integer)
   demor cmd (show result)
 
 demoBool :: String -> IO ()
 demoBool cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: Bool)
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: Bool)
   demor cmd (show result)
 
 demoMovs :: String -> IO ()
 demoMovs cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: [Move])
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: [Move])
   demor cmd (show result)
 
 main :: IO ()
